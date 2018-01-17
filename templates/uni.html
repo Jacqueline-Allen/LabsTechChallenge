@@ -1,18 +1,19 @@
-<!DOCTYPE html> 
+<DOCCTYPE html> 
 <html>
-	<head> 
-		<title>ja3143</title>
-		 <h1 id="myName"> Jacqueline Allen </h1>
-		 <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Cinzel|Homemade+Apple|Indie+Flower" rel="stylesheet">
-   		 <!-- link to the css file controlling style -->
-   		 <link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	
-	<body>
-		<div id="info">
-			<p>Favorite Color: Green! <br> Favorite Picture: </p>
-			<img class="catPic" src="https://github.com/Jacqueline-Allen/LabsTechChallenge/blob/master/images/cat.jpeg">	
-		</div>
+    <head> 
+        <title>ja3143</title>
+        <h1 id="myName"> Jacqueline Allen </h1>
+        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Indie+Flower" rel="stylesheet">
+    <!-- link to the css file controlling style -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    </head>
+                                                            
+    <body>
+        <div id="info">
+            <p>Favorite Color: <strong>Green!</strong><br> Favorite Picture: </p>
+            <img id="catPic" src="{{ url_for('static', filename='images/cat.jpeg') }}">    
+        </div>
 
-	</body>
+    </body>
 </html>
+
